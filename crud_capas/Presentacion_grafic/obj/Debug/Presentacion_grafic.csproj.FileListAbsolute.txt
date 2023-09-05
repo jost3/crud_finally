@@ -1,0 +1,10 @@
+C:\Users\Josue\Desktop\proyect_c#1\Crud_Capas\Presentacion_grafic\bin\Debug\Presentacion_grafic.exe.config
+C:\Users\Josue\Desktop\proyect_c#1\Crud_Capas\Presentacion_grafic\bin\Debug\Presentacion_grafic.exe
+C:\Users\Josue\Desktop\proyect_c#1\Crud_Capas\Presentacion_grafic\bin\Debug\Presentacion_grafic.pdb
+C:\Users\Josue\Desktop\proyect_c#1\Crud_Capas\Presentacion_grafic\obj\Debug\Presentacion_grafic.csproj.AssemblyReference.cache
+C:\Users\Josue\Desktop\proyect_c#1\Crud_Capas\Presentacion_grafic\obj\Debug\Presentacion_grafic.Properties.Resources.resources
+C:\Users\Josue\Desktop\proyect_c#1\Crud_Capas\Presentacion_grafic\obj\Debug\Presentacion_grafic.csproj.GenerateResource.cache
+C:\Users\Josue\Desktop\proyect_c#1\Crud_Capas\Presentacion_grafic\obj\Debug\Presentacion_grafic.csproj.CoreCompileInputs.cache
+C:\Users\Josue\Desktop\proyect_c#1\Crud_Capas\Presentacion_grafic\obj\Debug\Presentacion_grafic.exe
+C:\Users\Josue\Desktop\proyect_c#1\Crud_Capas\Presentacion_grafic\obj\Debug\Presentacion_grafic.pdb
+C:\Users\Josue\Desktop\proyect_c#1\Crud_Capas\Presentacion_grafic\obj\Debug\Presentacion_grafic.Form1.resources
