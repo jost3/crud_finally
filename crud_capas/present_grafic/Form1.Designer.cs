@@ -150,6 +150,8 @@
             this.textNombre.Size = new System.Drawing.Size(226, 34);
             this.textNombre.TabIndex = 2;
             this.textNombre.Text = "Nombre";
+            this.textNombre.Enter += new System.EventHandler(this.textNombre_Enter);
+            this.textNombre.Leave += new System.EventHandler(this.textNombre_Leave);
             // 
             // label1
             // 
@@ -182,6 +184,8 @@
             this.textApellido.Size = new System.Drawing.Size(222, 34);
             this.textApellido.TabIndex = 4;
             this.textApellido.Text = "Apellido";
+            this.textApellido.Enter += new System.EventHandler(this.textApellido_Enter);
+            this.textApellido.Leave += new System.EventHandler(this.textApellido_Leave);
             // 
             // label3
             // 
@@ -203,6 +207,8 @@
             this.textID.Size = new System.Drawing.Size(228, 34);
             this.textID.TabIndex = 6;
             this.textID.Text = "ID";
+            this.textID.Enter += new System.EventHandler(this.textID_Enter);
+            this.textID.Leave += new System.EventHandler(this.textID_Leave);
             // 
             // label4
             // 

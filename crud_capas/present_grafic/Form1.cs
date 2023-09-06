@@ -37,6 +37,37 @@ namespace present_grafic
         private void Form1_Load(object sender, EventArgs e)
         {
             comboSexo.SelectedIndex = 0;
+            btnGuardar.Enabled = false;
+        }
+
+        private void textNombre_Enter(object sender, EventArgs e)
+        {
+            if (textNombre.Text == "Nombre") textNombre.Text = "";
+        }
+
+        private void textNombre_Leave(object sender, EventArgs e)
+        {
+            if (textNombre.Text == "") textNombre.Text = "Nombre";
+        }
+
+        private void textApellido_Enter(object sender, EventArgs e)
+        {
+            if (textApellido.Text == "Apellido") textApellido.Text = "";
+        }
+
+        private void textApellido_Leave(object sender, EventArgs e)
+        {
+            if (textApellido.Text == "") textApellido.Text = "Apellido";
+        }
+
+        private void textID_Enter(object sender, EventArgs e)
+        {
+            if (textID.Text == "ID") textID.Text = "";
+        }
+
+        private void textID_Leave(object sender, EventArgs e)
+        {
+            if (textID.Text == "") textID.Text = "ID";
         }
     }
 }
