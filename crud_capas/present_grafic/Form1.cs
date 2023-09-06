@@ -69,5 +69,16 @@ namespace present_grafic
         {
             if (textID.Text == "") textID.Text = "ID";
         }
+        private void ClearTexboxs()
+        {
+            textNombre.Text = "Nombre";
+            textApellido.Text = "Apellido";
+            textID.Text = "ID";
+        }
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            btnGuardar.Enabled = true;
+            btnNuevo.Enabled = false;
+        }
     }
 }

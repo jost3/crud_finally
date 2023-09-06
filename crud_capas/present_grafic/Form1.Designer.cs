@@ -250,6 +250,7 @@
             // btnGuardar
             // 
             this.btnGuardar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
             this.btnGuardar.Location = new System.Drawing.Point(38, 36);
             this.btnGuardar.Name = "btnGuardar";
@@ -261,6 +262,7 @@
             // btnEliminar
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
             this.btnEliminar.Location = new System.Drawing.Point(38, 106);
             this.btnEliminar.Name = "btnEliminar";
@@ -272,6 +274,7 @@
             // btnModificar
             // 
             this.btnModificar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnModificar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnModificar.ForeColor = System.Drawing.Color.White;
             this.btnModificar.Location = new System.Drawing.Point(211, 36);
             this.btnModificar.Name = "btnModificar";
@@ -283,6 +286,7 @@
             // btnNuevo
             // 
             this.btnNuevo.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnNuevo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNuevo.ForeColor = System.Drawing.Color.White;
             this.btnNuevo.Location = new System.Drawing.Point(211, 106);
             this.btnNuevo.Name = "btnNuevo";
@@ -290,6 +294,7 @@
             this.btnNuevo.TabIndex = 3;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = false;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // Form1
             // 
