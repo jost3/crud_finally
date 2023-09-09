@@ -80,5 +80,10 @@ namespace present_grafic
             btnGuardar.Enabled = true;
             btnNuevo.Enabled = false;
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
