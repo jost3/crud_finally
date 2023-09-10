@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using data_accs.Entidades;
+using capa_comm1.Atribut;
 
 namespace dominio_3.Crud
 {
@@ -17,6 +18,11 @@ namespace dominio_3.Crud
             DataTable td = new DataTable();
             td = estudiante.Mostrar();
             return td;
+        }
+
+        public void insertar(atributesEstud obj)
+        {
+            estudiante.insertar(obj);
         }
     }
 }
