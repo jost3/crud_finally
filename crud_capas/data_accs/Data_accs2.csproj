@@ -42,11 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion\conexion_BD.cs" />
+    <Compile Include="Entidades\estudiante.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Entidades\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\capa_comm1\Capa_comm1.csproj">
       <Project>{87188199-5320-43cf-998d-5753c18cd463}</Project>
