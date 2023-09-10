@@ -98,5 +98,34 @@ namespace present_grafic
         {
 
         }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            if (edit == false)
+            {
+                //INSERTA DATOS
+                try
+                {
+                    //INSERTA DATOS
+                    atributes.ID1 = textID.Text;
+                    atributes.Nombre = textNombre.Text;
+                    atributes.Apellido = textApellido.Text;
+                    atributes.Sexo = comboSexo.Text;
+                    atributes.Dni = Convert.ToChar(textDni.Text);
+                    estudiante.insertar(atributes);
+                    ClearTexboxs();
+                    getData();
+                    MessageBox.Show("INSERTADO", "SE GUARDO UN DATO EXITOSAMENTE", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("ERROR", $"SE PRODUJO EL SIGUIENTE ERROR: {ex.ToString()}", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else (edit == true)
+            {
+                //ACTUALIZA DATOS
+            }
+        }
     }
 }
