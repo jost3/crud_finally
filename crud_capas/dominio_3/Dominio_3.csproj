@@ -46,5 +46,15 @@
   <ItemGroup>
     <Folder Include="Crud\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\capa_comm1\Capa_comm1.csproj">
+      <Project>{87188199-5320-43cf-998d-5753c18cd463}</Project>
+      <Name>Capa_comm1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\data_accs\Data_accs2.csproj">
+      <Project>{9c91c48f-4c7f-442c-8550-1ea25bfe3aff}</Project>
+      <Name>Data_accs2</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
