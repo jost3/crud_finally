@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using data_accs.Conexion;
+using capa_comm1.Atribut;
 
 namespace data_accs.Entidades
 {
@@ -37,6 +38,31 @@ namespace data_accs.Entidades
                 cmd.Connection = c.CloseConnection();
             }
             return td;
+        }
+        public void insertar(atributesEstud obj)
+        {
+            try
+            {
+                cmd.Connection = c.OpenConnection();
+                cmd.CommandText = "insertar";
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@ID",obj.ID1);
+                cmd.Parameters.AddWithValue("@nombre", obj.Nombre);
+                cmd.Parameters.AddWithValue("@apellido", obj.Apellido);
+                cmd.Parameters.AddWithValue("@sexo", obj.Sexo);
+                cmd.Parameters.AddWithValue("@dni", obj.Dni);
+                cmd.ExecuteNonQuery();
+                cmd.Parameters.Clear();
+
+            }
+            catch(Exception ex)
+            {
+                string smg = ex.ToString();
+            }
+            finally
+            {
+                cmd.Connection = c.CloseConnection();
+            }
         }
     }
 }
