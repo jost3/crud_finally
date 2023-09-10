@@ -62,7 +62,7 @@
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(0, 0);
             this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(995, 60);
+            this.panelTop.Size = new System.Drawing.Size(922, 60);
             this.panelTop.TabIndex = 0;
             // 
             // btnMax
@@ -70,7 +70,7 @@
             this.btnMax.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMax.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnMax.Font = new System.Drawing.Font("Agency FB", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMax.Location = new System.Drawing.Point(895, 12);
+            this.btnMax.Location = new System.Drawing.Point(822, 12);
             this.btnMax.Name = "btnMax";
             this.btnMax.Size = new System.Drawing.Size(42, 31);
             this.btnMax.TabIndex = 1;
@@ -83,7 +83,7 @@
             this.btnMin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMin.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMin.Location = new System.Drawing.Point(847, 12);
+            this.btnMin.Location = new System.Drawing.Point(774, 12);
             this.btnMin.Name = "btnMin";
             this.btnMin.Size = new System.Drawing.Size(42, 31);
             this.btnMin.TabIndex = 1;
@@ -96,7 +96,7 @@
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.BackColor = System.Drawing.Color.Red;
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Location = new System.Drawing.Point(943, 12);
+            this.btnClose.Location = new System.Drawing.Point(870, 12);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(42, 31);
             this.btnClose.TabIndex = 1;
@@ -114,7 +114,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(973, 483);
+            this.dataGridView1.Size = new System.Drawing.Size(900, 483);
             this.dataGridView1.TabIndex = 1;
             // 
             // textNombre
@@ -217,7 +217,7 @@
             this.groupBox1.Controls.Add(this.btnEliminar);
             this.groupBox1.Controls.Add(this.btnGuardar);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(611, 109);
+            this.groupBox1.Location = new System.Drawing.Point(538, 109);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(372, 163);
             this.groupBox1.TabIndex = 11;
@@ -300,7 +300,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(995, 787);
+            this.ClientSize = new System.Drawing.Size(922, 622);
             this.Controls.Add(this.textDni);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.groupBox1);

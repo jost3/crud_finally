@@ -34,6 +34,10 @@ namespace present_grafic
             this.WindowState = FormWindowState.Minimized;
         }
 
+        private void getData()
+        {
+
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
             comboSexo.SelectedIndex = 0;
