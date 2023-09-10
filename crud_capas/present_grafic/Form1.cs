@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using capa_comm1.Atribut;
+using dominio_3.Crud;
 
 namespace present_grafic
 {
@@ -17,6 +19,11 @@ namespace present_grafic
             InitializeComponent();
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
+
+        //VARIABLES
+        Cestudiante estudiante = new Cestudiante();
+        atributesEstud atributes = new atributesEstud();
+        bool edit = false;
 
         private void btnClose_Click(object sender, EventArgs e)
         {
@@ -36,12 +43,14 @@ namespace present_grafic
 
         private void getData()
         {
-
+            Cestudiante Cestudiante = new Cestudiante();
+            dataGridView1.DataSource = Cestudiante.Mostrar();
         }
         private void Form1_Load(object sender, EventArgs e)
         {
             comboSexo.SelectedIndex = 0;
             btnGuardar.Enabled = false;
+            getData();
         }
 
         private void textNombre_Enter(object sender, EventArgs e)
