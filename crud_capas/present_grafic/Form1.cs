@@ -87,6 +87,7 @@ namespace present_grafic
             textNombre.Text = "Nombre";
             textApellido.Text = "Apellido";
             textID.Text = "ID";
+            textDni.Text = "Dni";
         }
         private void btnNuevo_Click(object sender, EventArgs e)
         {
@@ -106,12 +107,12 @@ namespace present_grafic
                 //INSERTA DATOS
                 try
                 {
-                    //INSERTA DATOS
-                    atributes.ID1 = textID.Text;
+                   
+                    atributes.ID = Convert.ToInt32(textID.Text);
                     atributes.Nombre = textNombre.Text;
                     atributes.Apellido = textApellido.Text;
                     atributes.Sexo = comboSexo.Text;
-                    atributes.Dni = Convert.ToChar(textDni.Text);
+                    atributes.Dni = Convert.ToInt32(textDni.Text);
                     estudiante.insertar(atributes);
                     ClearTexboxs();
                     getData();
@@ -122,10 +123,19 @@ namespace present_grafic
                     MessageBox.Show("ERROR", $"SE PRODUJO EL SIGUIENTE ERROR: {ex.ToString()}", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            else (edit == true)
+            else if(edit == true)
             {
                 //ACTUALIZA DATOS
             }
         }
+        private void textDni_Enter(object sender, EventArgs e)
+        {
+            if (textDni.Text == "Dni") textDni.Text = "";
+        }
+        private void textDni_Leave(object sender, EventArgs e)
+        {
+            if (textDni.Text == "") textDni.Text = "Dni";
+        }
+
     }
 }

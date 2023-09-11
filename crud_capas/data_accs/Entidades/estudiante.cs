@@ -43,10 +43,11 @@ namespace data_accs.Entidades
         {
             try
             {
+                //iINSERTAR DATOS CONFUCION AL CREAR EL PROCEDIMIENRTO ALMACENADO
                 cmd.Connection = c.OpenConnection();
-                cmd.CommandText = "insertar";
+                cmd.CommandText = "mostrar1";
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@ID",obj.ID1);
+                cmd.Parameters.AddWithValue("@ID",obj.ID);
                 cmd.Parameters.AddWithValue("@nombre", obj.Nombre);
                 cmd.Parameters.AddWithValue("@apellido", obj.Apellido);
                 cmd.Parameters.AddWithValue("@sexo", obj.Sexo);

@@ -106,12 +106,12 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(10, 371);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(900, 483);
@@ -294,7 +294,9 @@
             this.textDni.Name = "textDni";
             this.textDni.Size = new System.Drawing.Size(222, 34);
             this.textDni.TabIndex = 13;
-            this.textDni.Text = "DNI ";
+            this.textDni.Text = "Dni";
+            this.textDni.Enter += new System.EventHandler(this.textDni_Enter);
+            this.textDni.Leave += new System.EventHandler(this.textDni_Leave);
             // 
             // Form1
             // 
