@@ -24,5 +24,10 @@ namespace dominio_3.Crud
         {
             estudiante.insertar(obj);
         }
+
+        public void modificar(atributesEstud obj)
+        {
+            estudiante.modificar(obj);
+        }
     }
 }

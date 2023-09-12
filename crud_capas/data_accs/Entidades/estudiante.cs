@@ -23,7 +23,7 @@ namespace data_accs.Entidades
             try
             {
                 cmd.Connection = c.OpenConnection();
-                cmd.CommandText = "sp_mostrar";
+                cmd.CommandText = "SP_mostrar";
                 cmd.CommandType = CommandType.StoredProcedure;
                 dr = cmd.ExecuteReader();
                 td.Load(dr);
@@ -45,7 +45,7 @@ namespace data_accs.Entidades
             {
                 //iINSERTAR DATOS CONFUCION AL CREAR EL PROCEDIMIENRTO ALMACENADO
                 cmd.Connection = c.OpenConnection();
-                cmd.CommandText = "mostrar1";
+                cmd.CommandText = "SP_insertar";
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@ID",obj.ID);
                 cmd.Parameters.AddWithValue("@nombre", obj.Nombre);
@@ -57,6 +57,33 @@ namespace data_accs.Entidades
 
             }
             catch(Exception ex)
+            {
+                string smg = ex.ToString();
+            }
+            finally
+            {
+                cmd.Connection = c.CloseConnection();
+            }
+        }
+
+        public void modificar(atributesEstud obj)
+        {
+            try
+            {
+                //iINSERTAR DATOS CONFUCION AL CREAR EL PROCEDIMIENRTO ALMACENADO
+                cmd.Connection = c.OpenConnection();
+                cmd.CommandText = "SP_modificar";
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@ID", obj.ID);
+                cmd.Parameters.AddWithValue("@nombre", obj.Nombre);
+                cmd.Parameters.AddWithValue("@apellido", obj.Apellido);
+                cmd.Parameters.AddWithValue("@sexo", obj.Sexo);
+                cmd.Parameters.AddWithValue("@dni", obj.Dni);
+                cmd.ExecuteNonQuery();
+                cmd.Parameters.Clear();
+
+            }
+            catch (Exception ex)
             {
                 string smg = ex.ToString();
             }

@@ -118,7 +118,7 @@ namespace present_grafic
                     getData();
                     btnGuardar.Enabled = false;
                     btnNuevo.Enabled = true;
-                    MessageBox.Show("SE GUARDO UN DATO EXITOSAMENTE", "INSERTADO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("SE GUARDO UN REGISTRO EXITOSAMENTE", "INSERTADO", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 catch (Exception ex)
                 {
@@ -128,6 +128,26 @@ namespace present_grafic
             else if(edit == true)
             {
                 //ACTUALIZA DATOS
+                try
+                {
+                    atributes.ID = Convert.ToInt32(textID.Text);
+                    atributes.Nombre = textNombre.Text;
+                    atributes.Apellido = textApellido.Text;
+                    atributes.Sexo = comboSexo.Text;
+                    atributes.Dni = Convert.ToInt32(textDni.Text);
+                    estudiante.modificar(atributes);
+                    ClearTexboxs();
+                    getData();
+                    btnGuardar.Enabled = false;
+                    btnNuevo.Enabled = true;
+                    textID.Enabled = true;
+                    edit = false;
+                    MessageBox.Show("SE ACTUALIZO UN REGISTRO EXITOSAMENTE", "INSERTADO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show($"SE PRODUJO EL SIGUIENTE ERROR: {ex.ToString()}", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
         private void textDni_Enter(object sender, EventArgs e)
@@ -139,5 +159,21 @@ namespace present_grafic
             if (textDni.Text == "") textDni.Text = "Dni";
         }
 
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            if(dataGridView1.SelectedRows.Count > 0)
+            {
+                textID.Enabled = false;
+                btnNuevo.Enabled = false;
+                btnGuardar.Enabled = true;
+                edit = true;
+                // CARGA DE DATOS
+                textID.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+                textNombre.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+                textApellido.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+                comboSexo.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+                textDni.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+            }
+        }
     }
 }
