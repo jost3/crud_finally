@@ -195,5 +195,28 @@ namespace present_grafic
                 getData();
             }
         }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                DialogResult dialog = new DialogResult();
+                dialog = MessageBox.Show("¿DESEAS ELIMINAR ESTE REGISTRO?","ELIMINAR", MessageBoxButtons.YesNo,MessageBoxIcon.Warning);
+                if(dialog == DialogResult.Yes)
+                {
+                    try
+                    {
+                        atributes.ID = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value.ToString());
+                        estudiante.eliminar(atributes);
+                        getData();
+                        MessageBox.Show("REGISTRO ELIMINADO EXITOSAMENTE", "ELIMINADO", MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    }
+                    catch(Exception ex)
+                    {
+                        MessageBox.Show($"SE PRODUJO EL SIGUIENTE ERROR: {ex.ToString()}", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+        }
     }
 }

@@ -27,3 +27,11 @@ AS
 UPDATE estudiante23 SET nombre = @nombre, apellido = @apellido, sexo = @sexo, dni = @dni
 WHERE ID = @ID
 GO
+
+-- ELIMINAR DATOS--
+
+CREATE PROC SP_eliminar
+@ID INT
+AS
+DELETE estudiante23 WHERE ID = @ID
+GO

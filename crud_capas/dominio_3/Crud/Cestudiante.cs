@@ -29,5 +29,9 @@ namespace dominio_3.Crud
         {
             estudiante.modificar(obj);
         }
+        public void eliminar(atributesEstud obj)
+        {
+            estudiante.eliminar(obj);
+        }
     }
 }

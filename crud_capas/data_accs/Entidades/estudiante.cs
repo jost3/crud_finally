@@ -92,5 +92,26 @@ namespace data_accs.Entidades
                 cmd.Connection = c.CloseConnection();
             }
         }
+
+        public void eliminar(atributesEstud obj)
+        {
+            try
+            {
+                cmd.Connection = c.OpenConnection();
+                cmd.CommandText = "SP_eliminar";
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@ID", obj.ID);
+                cmd.ExecuteReader();
+                cmd.Parameters.Clear();
+            }
+            catch(Exception ex)
+            {
+                string sbj = ex.ToString();
+            }
+            finally
+            {
+                cmd.Connection = c.CloseConnection();
+            }
+        }
     }
 }
