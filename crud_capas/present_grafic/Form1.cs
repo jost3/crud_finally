@@ -175,5 +175,25 @@ namespace present_grafic
                 textDni.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
             }
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void textBuscar_Enter(object sender, EventArgs e)
+        {
+            if (textBuscar.Text == "Buscar...") textBuscar.Text = "";
+        }
+
+        private void textBuscar_Leave(object sender, EventArgs e)
+        {
+            if (textBuscar.Text == "")
+            {
+                textBuscar.Text = "Buscar...";
+                getData();
+            }
+        }
     }
 }
