@@ -116,11 +116,13 @@ namespace present_grafic
                     estudiante.insertar(atributes);
                     ClearTexboxs();
                     getData();
-                    MessageBox.Show("INSERTADO", "SE GUARDO UN DATO EXITOSAMENTE", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    btnGuardar.Enabled = false;
+                    btnNuevo.Enabled = true;
+                    MessageBox.Show("SE GUARDO UN DATO EXITOSAMENTE", "INSERTADO", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("ERROR", $"SE PRODUJO EL SIGUIENTE ERROR: {ex.ToString()}", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show($"SE PRODUJO EL SIGUIENTE ERROR: {ex.ToString()}", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else if(edit == true)
