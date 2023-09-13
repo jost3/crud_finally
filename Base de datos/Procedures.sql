@@ -35,3 +35,12 @@ CREATE PROC SP_eliminar
 AS
 DELETE estudiante23 WHERE ID = @ID
 GO
+
+--BUSCAR DATOS--
+
+CREATE PROC SP_buscar
+@buscar NVARCHAR(35)
+AS
+SELECT * FROM estudiante23
+WHERE nombre LIKE + @buscar + '%'
+GO

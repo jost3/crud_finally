@@ -315,6 +315,7 @@
             this.textBuscar.Size = new System.Drawing.Size(571, 34);
             this.textBuscar.TabIndex = 14;
             this.textBuscar.Text = "Buscar...";
+            this.textBuscar.TextChanged += new System.EventHandler(this.textBuscar_TextChanged);
             this.textBuscar.Enter += new System.EventHandler(this.textBuscar_Enter);
             this.textBuscar.Leave += new System.EventHandler(this.textBuscar_Leave);
             // 

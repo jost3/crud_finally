@@ -218,5 +218,11 @@ namespace present_grafic
                 }
             }
         }
+
+        private void textBuscar_TextChanged(object sender, EventArgs e)
+        {
+            Cestudiante Cestudiante = new Cestudiante();
+            dataGridView1.DataSource = Cestudiante.buscar(textBuscar.Text);
+        }
     }
 }

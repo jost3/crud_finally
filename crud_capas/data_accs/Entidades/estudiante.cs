@@ -39,6 +39,30 @@ namespace data_accs.Entidades
             }
             return td;
         }
+
+        public DataTable buscar(string buscar)
+        {
+            try
+            {
+                cmd.Connection = c.OpenConnection();
+                cmd.CommandText = "SP_buscar";
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@buscar", buscar);
+                dr = cmd.ExecuteReader();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                td.Load(dr);
+            }
+            catch (Exception ex)
+            {
+                string smj = ex.ToString();
+
+            }
+            finally
+            {
+                cmd.Connection = c.CloseConnection();
+            }
+            return td;
+        }
         public void insertar(atributesEstud obj)
         {
             try
@@ -113,5 +137,6 @@ namespace data_accs.Entidades
                 cmd.Connection = c.CloseConnection();
             }
         }
+
     }
 }

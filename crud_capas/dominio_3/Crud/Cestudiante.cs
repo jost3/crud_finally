@@ -20,6 +20,13 @@ namespace dominio_3.Crud
             return td;
         }
 
+        public DataTable buscar(string buscar)
+        {
+            DataTable td = new DataTable();
+            td = estudiante.buscar(buscar);
+            return td;
+        }
+
         public void insertar(atributesEstud obj)
         {
             estudiante.insertar(obj);
