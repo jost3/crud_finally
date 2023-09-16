@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using capa_comm1.Atribut;
 using dominio_3.Crud;
+using System.Drawing.Printing;
 
 namespace present_grafic
 {
@@ -18,6 +19,8 @@ namespace present_grafic
         {
             InitializeComponent();
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+
+
         }
 
         //VARIABLES
@@ -228,6 +231,34 @@ namespace present_grafic
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void dataGridView1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ImprimirEstudiante(object sender,PrintPageEventArgs e)
+        {
+            Font font = new Font("Arial",14);
+            int ancho = 550;
+            int y = 20;
+
+            e.Graphics.DrawString("---INFROMACION DEL ESTUDIANTE---", font, Brushes.Black, new RectangleF(0, y += 20, ancho, 20));
+            e.Graphics.DrawString("ID  :"+textID.Text, font, Brushes.Black, new RectangleF(0, y += 50, ancho, 20));
+            e.Graphics.DrawString("NOMBRE :  "+textNombre.Text, font, Brushes.Black, new RectangleF(0, y += 50, ancho, 20));
+            e.Graphics.DrawString("APELLIDO: "+textApellido.Text, font, Brushes.Black, new RectangleF(0, y += 50, ancho, 20));
+            e.Graphics.DrawString("SEXO :  "+comboSexo.Text, font, Brushes.Black, new RectangleF(0, y += 50, ancho, 20));
+            e.Graphics.DrawString("DNI  :"+textDni.Text, font, Brushes.Black, new RectangleF(0, y += 50, ancho, 20));
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            printDocument1 = new PrintDocument();
+            PrinterSettings ps = new PrinterSettings();
+            printDocument1.PrinterSettings = ps;
+            printDocument1.PrintPage += ImprimirEstudiante;
+            printDocument1.Print();
         }
     }
 }
