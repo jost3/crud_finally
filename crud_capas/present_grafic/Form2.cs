@@ -78,7 +78,12 @@ namespace present_grafic
 
         private void textContraseña_Leave(object sender, EventArgs e)
         {
-            if (textContraseña.Text == "") textContraseña.Text = "Ingrese Su Contraseña";
+            if (string.IsNullOrEmpty(textContraseña.Text))
+            {
+                textContraseña.Text = "Ingrese Su Contraseña";
+                // Restaura el texto de contraseña en el caso de que no se haya ingresado nada
+                textContraseña.PasswordChar = '\0'; // Restaura el carácter de contraseña
+            }
         }
 
         private void textContraseña_FontChanged(object sender, EventArgs e)
@@ -88,7 +93,12 @@ namespace present_grafic
 
         private void textContraseña_Enter(object sender, EventArgs e)
         {
-            if (textContraseña.Text == "Ingrese Su Contraseña") textContraseña.Text = "";
+            if (textContraseña.Text == "Ingrese Su Contraseña")
+            {
+                textContraseña.Text = "";
+                // Configura el caracter de contraseña (puntos negros)
+                textContraseña.PasswordChar = '*'; // Cambia '*' a otro carácter si lo prefieres
+            }
         }
 
         private void Form2_MouseDown(object sender, MouseEventArgs e)
@@ -116,6 +126,11 @@ namespace present_grafic
             {
                 isDragging = false;
             }
+        }
+
+        private void textUser_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
