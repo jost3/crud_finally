@@ -97,6 +97,9 @@
             this.textUser.Name = "textUser";
             this.textUser.Size = new System.Drawing.Size(259, 37);
             this.textUser.TabIndex = 4;
+            this.textUser.Text = "Ingrese Su usuario";
+            this.textUser.Enter += new System.EventHandler(this.textUser_Enter);
+            this.textUser.Leave += new System.EventHandler(this.textUser_Leave);
             // 
             // textContraseña
             // 
@@ -105,6 +108,10 @@
             this.textContraseña.Name = "textContraseña";
             this.textContraseña.Size = new System.Drawing.Size(259, 37);
             this.textContraseña.TabIndex = 5;
+            this.textContraseña.Text = "Ingrese Su Contraseña";
+            this.textContraseña.FontChanged += new System.EventHandler(this.textContraseña_FontChanged);
+            this.textContraseña.Enter += new System.EventHandler(this.textContraseña_Enter);
+            this.textContraseña.Leave += new System.EventHandler(this.textContraseña_Leave);
             // 
             // btnRegistrar
             // 

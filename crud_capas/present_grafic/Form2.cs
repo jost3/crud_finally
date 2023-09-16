@@ -55,5 +55,30 @@ namespace present_grafic
                 MessageBox.Show("No existe  este usuario" + usuario);
             }
         }
+
+        private void textUser_Leave(object sender, EventArgs e)
+        {
+            if (textUser.Text == "") textUser.Text = "Ingrese Su usuario";
+        }
+
+        private void textUser_Enter(object sender, EventArgs e)
+        {
+            if (textUser.Text == "Ingrese Su usuario") textUser.Text = "";
+        }
+
+        private void textContraseña_Leave(object sender, EventArgs e)
+        {
+            if (textContraseña.Text == "") textContraseña.Text = "Ingrese Su Contraseña";
+        }
+
+        private void textContraseña_FontChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textContraseña_Enter(object sender, EventArgs e)
+        {
+            if (textContraseña.Text == "Ingrese Su Contraseña") textContraseña.Text = "";
+        }
     }
 }
