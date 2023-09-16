@@ -11,3 +11,7 @@ dni INT
  pass_log nvarchar(10) primary key,
  user_log nvarchar(20)
  )
+
+ INSERT INTO inicio_sesion VALUES('8989','Josue')
+
+ SELECT * FROM inicio_sesion
