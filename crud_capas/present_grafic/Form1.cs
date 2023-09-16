@@ -253,7 +253,7 @@ namespace present_grafic
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
+        {  
             printDocument1 = new PrintDocument();
             PrinterSettings ps = new PrinterSettings();
             printDocument1.PrinterSettings = ps;

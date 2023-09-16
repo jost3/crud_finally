@@ -15,3 +15,4 @@ C:\Users\Josue\Desktop\proyect_c#1\Crud_Capas\present_grafic\bin\Debug\capa_comm
 C:\Users\Josue\Desktop\proyect_c#1\Crud_Capas\present_grafic\bin\Debug\dominio_3.pdb
 C:\Users\Josue\Desktop\proyect_c#1\Crud_Capas\present_grafic\bin\Debug\data_accs.pdb
 C:\Users\Josue\Desktop\proyect_c#1\Crud_Capas\present_grafic\obj\Debug\present_grafic.csproj.CopyComplete
+C:\Users\Josue\Desktop\proyect_c#1\Crud_Capas\present_grafic\obj\Debug\present_grafic.Form2.resources
