@@ -224,5 +224,10 @@ namespace present_grafic
             Cestudiante Cestudiante = new Cestudiante();
             dataGridView1.DataSource = Cestudiante.buscar(textBuscar.Text);
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
