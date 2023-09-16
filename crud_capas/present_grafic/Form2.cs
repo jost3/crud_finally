@@ -14,9 +14,19 @@ namespace present_grafic
 {
     public partial class Form2 : Form
     {
+
+        private bool isDragging = false;
+        private Point lastCursorPosition;
         public Form2()
         {
             InitializeComponent();
+
+            this.MouseDown += Form2_MouseDown;
+            this.MouseMove += Form2_MouseMove;
+            this.MouseUp += Form2_MouseUp;
+
+            label1.BackColor = Color.FromArgb(10, 255, 255, 255);
+            label2.BackColor = Color.FromArgb(10, 255, 255, 255);
         }
 
         private void btnSaliendo_Click(object sender, EventArgs e)
@@ -79,6 +89,33 @@ namespace present_grafic
         private void textContraseña_Enter(object sender, EventArgs e)
         {
             if (textContraseña.Text == "Ingrese Su Contraseña") textContraseña.Text = "";
+        }
+
+        private void Form2_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                isDragging = true;
+                lastCursorPosition = e.Location;
+            }
+        }
+
+        private void Form2_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (isDragging)
+            {
+                int deltaX = e.X - lastCursorPosition.X;
+                int deltaY = e.Y - lastCursorPosition.Y;
+                this.Location = new Point(this.Left + deltaX, this.Top + deltaY);
+            }
+        }
+
+        private void Form2_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                isDragging = false;
+            }
         }
     }
 }

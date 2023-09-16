@@ -36,6 +36,7 @@
             this.textUser = new System.Windows.Forms.TextBox();
             this.textContraseña = new System.Windows.Forms.TextBox();
             this.btnRegistrar = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -43,18 +44,19 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.btnSaliendo);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(592, 60);
+            this.panel1.Size = new System.Drawing.Size(574, 60);
             this.panel1.TabIndex = 0;
             // 
             // btnSaliendo
             // 
             this.btnSaliendo.BackColor = System.Drawing.Color.Red;
             this.btnSaliendo.ForeColor = System.Drawing.Color.White;
-            this.btnSaliendo.Location = new System.Drawing.Point(528, 12);
+            this.btnSaliendo.Location = new System.Drawing.Point(509, 12);
             this.btnSaliendo.Name = "btnSaliendo";
             this.btnSaliendo.Size = new System.Drawing.Size(40, 29);
             this.btnSaliendo.TabIndex = 0;
@@ -65,7 +67,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::present_grafic.Properties.Resources.log;
-            this.pictureBox1.Location = new System.Drawing.Point(201, 100);
+            this.pictureBox1.Location = new System.Drawing.Point(220, 109);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(144, 125);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -75,7 +77,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(136, 276);
+            this.label1.BackColor = System.Drawing.Color.Black;
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(169, 265);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(68, 16);
             this.label1.TabIndex = 2;
@@ -84,7 +88,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(136, 379);
+            this.label2.BackColor = System.Drawing.Color.Black;
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(169, 382);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(101, 16);
             this.label2.TabIndex = 3;
@@ -92,7 +98,7 @@
             // 
             // textUser
             // 
-            this.textUser.Location = new System.Drawing.Point(139, 307);
+            this.textUser.Location = new System.Drawing.Point(165, 305);
             this.textUser.Multiline = true;
             this.textUser.Name = "textUser";
             this.textUser.Size = new System.Drawing.Size(259, 37);
@@ -103,7 +109,7 @@
             // 
             // textContraseña
             // 
-            this.textContraseña.Location = new System.Drawing.Point(139, 415);
+            this.textContraseña.Location = new System.Drawing.Point(165, 412);
             this.textContraseña.Multiline = true;
             this.textContraseña.Name = "textContraseña";
             this.textContraseña.Size = new System.Drawing.Size(259, 37);
@@ -125,11 +131,23 @@
             this.btnRegistrar.UseVisualStyleBackColor = false;
             this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Eras Medium ITC", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(46, 18);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(287, 23);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "I.E Carlos Morales de Chimbote";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(592, 531);
+            this.BackgroundImage = global::present_grafic.Properties.Resources.inic;
+            this.ClientSize = new System.Drawing.Size(574, 531);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.textContraseña);
             this.Controls.Add(this.textUser);
@@ -139,8 +157,13 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form2_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form2_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Form2_MouseUp);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -157,5 +180,6 @@
         private System.Windows.Forms.TextBox textUser;
         private System.Windows.Forms.TextBox textContraseña;
         private System.Windows.Forms.Button btnRegistrar;
+        private System.Windows.Forms.Label label3;
     }
 }
