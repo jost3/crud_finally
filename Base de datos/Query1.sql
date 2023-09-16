@@ -6,3 +6,8 @@ sexo NVARCHAR(15),
 dni INT
 )
  SELECT * FROM estudiante23
+
+ CREATE TABLE inicio_sesion(
+ pass_log nvarchar(10) primary key,
+ user_log nvarchar(20)
+ )
