@@ -260,5 +260,15 @@ namespace present_grafic
             printDocument1.PrintPage += ImprimirEstudiante;
             printDocument1.Print();
         }
+
+        private void dataGridView1_Resize(object sender, EventArgs e)
+        {
+            //NO ERA ESTE ERROR YA NO SE PUEDE ELIMINAR POR QUE SALE ERROR
+        }
+
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+
+        }
     }
 }

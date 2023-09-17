@@ -139,16 +139,16 @@ namespace present_grafic
             dataGridView1.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.DodgerBlue;
             dataGridView1.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.dataGridView1.GridColor = System.Drawing.Color.Black;
-            this.dataGridView1.Location = new System.Drawing.Point(68, 426);
+            this.dataGridView1.Location = new System.Drawing.Point(189, 456);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(865, 246);
+            this.dataGridView1.Size = new System.Drawing.Size(1000, 246);
             this.dataGridView1.TabIndex = 1;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.Enter += new System.EventHandler(this.dataGridView1_Enter);
+            this.dataGridView1.Resize += new System.EventHandler(this.dataGridView1_Resize);
             // 
             // textNombre
             // 
@@ -239,7 +239,7 @@ namespace present_grafic
             "Otros"});
             this.comboSexo.Location = new System.Drawing.Point(289, 202);
             this.comboSexo.Name = "comboSexo";
-            this.comboSexo.Size = new System.Drawing.Size(228, 24);
+            this.comboSexo.Size = new System.Drawing.Size(228, 34);
             this.comboSexo.TabIndex = 10;
             // 
             // groupBox1
@@ -416,6 +416,7 @@ namespace present_grafic
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Resize += new System.EventHandler(this.Form1_Resize);
             this.panelTop.ResumeLayout(false);
             this.panelTop.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
