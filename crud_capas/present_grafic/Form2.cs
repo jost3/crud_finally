@@ -27,6 +27,8 @@ namespace present_grafic
 
             label1.BackColor = Color.FromArgb(10, 255, 255, 255);
             label2.BackColor = Color.FromArgb(10, 255, 255, 255);
+
+            this.AcceptButton = btnRegistrar;
         }
 
         private void btnSaliendo_Click(object sender, EventArgs e)
@@ -62,7 +64,7 @@ namespace present_grafic
             }
             else
             {
-                MessageBox.Show("No existe  este usuario" + usuario);
+                MessageBox.Show("No existe este usuario " + usuario);
             }
         }
 

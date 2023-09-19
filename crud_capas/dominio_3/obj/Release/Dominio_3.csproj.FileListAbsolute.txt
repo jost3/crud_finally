@@ -1,0 +1,11 @@
+C:\Users\Josue\Desktop\proyect_c#1\Crud_Capas\dominio_3\bin\Release\dominio_3.dll
+C:\Users\Josue\Desktop\proyect_c#1\Crud_Capas\dominio_3\bin\Release\dominio_3.pdb
+C:\Users\Josue\Desktop\proyect_c#1\Crud_Capas\dominio_3\bin\Release\capa_comm1.dll
+C:\Users\Josue\Desktop\proyect_c#1\Crud_Capas\dominio_3\bin\Release\data_accs.dll
+C:\Users\Josue\Desktop\proyect_c#1\Crud_Capas\dominio_3\bin\Release\capa_comm1.pdb
+C:\Users\Josue\Desktop\proyect_c#1\Crud_Capas\dominio_3\bin\Release\data_accs.pdb
+C:\Users\Josue\Desktop\proyect_c#1\Crud_Capas\dominio_3\obj\Release\Dominio_3.csproj.AssemblyReference.cache
+C:\Users\Josue\Desktop\proyect_c#1\Crud_Capas\dominio_3\obj\Release\Dominio_3.csproj.CoreCompileInputs.cache
+C:\Users\Josue\Desktop\proyect_c#1\Crud_Capas\dominio_3\obj\Release\Dominio_3.csproj.CopyComplete
+C:\Users\Josue\Desktop\proyect_c#1\Crud_Capas\dominio_3\obj\Release\dominio_3.dll
+C:\Users\Josue\Desktop\proyect_c#1\Crud_Capas\dominio_3\obj\Release\dominio_3.pdb

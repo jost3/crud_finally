@@ -1,6 +1,0 @@
-C:\Users\Josue\Desktop\proyect_c#1\Crud_Capas\capa_comm1\bin\Debug\capa_comm1.dll
-C:\Users\Josue\Desktop\proyect_c#1\Crud_Capas\capa_comm1\bin\Debug\capa_comm1.pdb
-C:\Users\Josue\Desktop\proyect_c#1\Crud_Capas\capa_comm1\obj\Debug\Capa_comm1.csproj.AssemblyReference.cache
-C:\Users\Josue\Desktop\proyect_c#1\Crud_Capas\capa_comm1\obj\Debug\Capa_comm1.csproj.CoreCompileInputs.cache
-C:\Users\Josue\Desktop\proyect_c#1\Crud_Capas\capa_comm1\obj\Debug\capa_comm1.dll
-C:\Users\Josue\Desktop\proyect_c#1\Crud_Capas\capa_comm1\obj\Debug\capa_comm1.pdb
