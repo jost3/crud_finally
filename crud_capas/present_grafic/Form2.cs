@@ -98,8 +98,8 @@ namespace present_grafic
             if (textContraseña.Text == "Ingrese Su Contraseña")
             {
                 textContraseña.Text = "";
-                // Configura el caracter de contraseña (puntos negros)
-                textContraseña.PasswordChar = '*'; // Cambia '*' a otro carácter si lo prefieres
+               
+                textContraseña.PasswordChar = '*'; 
             }
         }
 

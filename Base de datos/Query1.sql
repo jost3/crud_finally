@@ -1,3 +1,13 @@
+/*CREAMOS NUESTARA BASE DE DATOS*/
+CREATE DATABASE CRUD_N_CAPAS
+GO
+
+/*LE DECIMOS QUE LO VAMOS A UTLIZAR */
+
+USE CRUD_N_CAPAS
+GO
+
+/*TABLA DE CRUD*/
 CREATE TABLE estudiante23(
 ID INT PRIMARY KEY,
 nombre NVARCHAR(35),
@@ -7,11 +17,12 @@ dni INT
 )
  SELECT * FROM estudiante23
 
+ /*TABLA DE LOGIN*/
  CREATE TABLE inicio_sesion(
  pass_log nvarchar(10) primary key,
  user_log nvarchar(20)
  )
-
+ /*INSERTAMOS NUESTRO USURIO Y CONTRASEÑA PARA SU USO*/
  INSERT INTO inicio_sesion VALUES('8989','Josue')
 
  SELECT * FROM inicio_sesion

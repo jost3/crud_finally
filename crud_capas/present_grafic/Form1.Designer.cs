@@ -128,7 +128,7 @@ namespace present_grafic
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.BackgroundColor = System.Drawing.Color.LightCyan;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -239,7 +239,7 @@ namespace present_grafic
             "Otros"});
             this.comboSexo.Location = new System.Drawing.Point(289, 202);
             this.comboSexo.Name = "comboSexo";
-            this.comboSexo.Size = new System.Drawing.Size(228, 34);
+            this.comboSexo.Size = new System.Drawing.Size(228, 24);
             this.comboSexo.TabIndex = 10;
             // 
             // groupBox1

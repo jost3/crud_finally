@@ -1,0 +1,9 @@
+C:\Users\Josue\Desktop\proyect_c#1\Crud_Capas\data_accs\bin\Debug\data_accs.dll
+C:\Users\Josue\Desktop\proyect_c#1\Crud_Capas\data_accs\bin\Debug\data_accs.pdb
+C:\Users\Josue\Desktop\proyect_c#1\Crud_Capas\data_accs\bin\Debug\capa_comm1.dll
+C:\Users\Josue\Desktop\proyect_c#1\Crud_Capas\data_accs\bin\Debug\capa_comm1.pdb
+C:\Users\Josue\Desktop\proyect_c#1\Crud_Capas\data_accs\obj\Debug\Data_accs2.csproj.AssemblyReference.cache
+C:\Users\Josue\Desktop\proyect_c#1\Crud_Capas\data_accs\obj\Debug\Data_accs2.csproj.CoreCompileInputs.cache
+C:\Users\Josue\Desktop\proyect_c#1\Crud_Capas\data_accs\obj\Debug\Data_accs2.csproj.CopyComplete
+C:\Users\Josue\Desktop\proyect_c#1\Crud_Capas\data_accs\obj\Debug\data_accs.dll
+C:\Users\Josue\Desktop\proyect_c#1\Crud_Capas\data_accs\obj\Debug\data_accs.pdb

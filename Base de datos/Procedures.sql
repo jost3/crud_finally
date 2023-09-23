@@ -1,3 +1,5 @@
+--MOSTRAR DATOS--
+
 CREATE PROC  SP_mostrar
 AS
 SELECT * FROM estudiante23
